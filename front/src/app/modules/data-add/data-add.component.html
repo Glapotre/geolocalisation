@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-body">
+    <form (submit)="onFormSubmit" [formGroup]="userForm">
+      <div class="form-group">
+        <label class="col-md-4">Spectacle</label>
+        <input type="text" formControlName="show" ngModel class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Point numero </label>
+        <input type="text" formControlName="number" ngModel class="form-control" />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Latitude point</label>
+        <input type="text" class="form-control" formControlName="lat" />
+      </div>
+      <div class="form-group">
+        <label class="col-md-4">Longitude point</label>
+        <input type="text" class="form-control" formControlName="lng" />
+      </div>
+
+
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Ajouter le point</button>
+      </div>
+    </form>
+  </div>
+</div>
+<p>
+ 
+</p>
